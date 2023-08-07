@@ -1,0 +1,10 @@
+<?php if(isset($_SESSION['signup_success'])):?>
+    <input type="hidden" id="signUpOk" value="<?php echo $_SESSION['signup_success'];?>">
+<?php unset($_SESSION['signup_success']);endif;?>
+
+<!-- <script>
+    const getmessage=document.getElementById('signUpOk').value;
+    if(getmessage){
+        alert(getmessage);
+    }
+</script> -->
